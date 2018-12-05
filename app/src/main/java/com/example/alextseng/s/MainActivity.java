@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } );
 
+        //big dick energy
         Switch swtch1 = (Switch) findViewById(R.id.switch1);
         swtch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
