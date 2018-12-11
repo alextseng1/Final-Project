@@ -9,27 +9,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NSFW mode"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="top|center"
-        android:orientation="vertical">
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:text="You're such a ..."
-            android:textSize="36sp"
+            android:text="Press the button!"
+            android:textSize="35sp"
             android:typeface="normal"
             app:fontFamily="@font/signpainter_house_script_regular"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,12 +39,15 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="53dp"
             android:layout_marginBottom="109dp"
-            android:text="TextView"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            app:fontFamily="casual"
             app:layout_constraintBottom_toTopOf="@+id/generatebutton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/message" />
+        android:gravity="center_horizonta"
 
         <Button
             android:id="@+id/generatebutton"
